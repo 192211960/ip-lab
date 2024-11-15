@@ -1,0 +1,26 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>candidate register</title>
+        
+</head>
+<body>
+    
+        <h2>Login</h2>
+        <form action="head.php" method="POST">
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="username" required>
+            
+           
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+           
+            <button type="submit" class="btn" >Login</button>
+        </form>
+        <p style="color:black">Don't register? <a href="sign up.html">Sign up here</a></p>
+    </div>
+</body>
+</html>
