@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>form</title>
+<style>
+body
+{
+background-color:grey;
+}
+h1
+{
+justify-content:center;
+align-items:center;
+text-transform:uppercase;
+color:pink;
+}
+.sai
+{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.sign label
+{
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 100;
+font-size:2rem;
+color:black;
+}
+</style>
+<body>
+<center><h1>registration form</h1></center>
+<div class="sai">
+<form action="lab.php" method="POST" class="sign">
+<label>name:</label>
+<input type="text" name="name"><br><br>
+<label>username:</label>
+<input type="text" name="username"><br><br>
+<label>password:</label>
+<input type="password" name="password"><br><br>
+<label>confirm password:</label>
+<input type="password" name="confirm-password"><br><br>
+<button>submit</button>
+</div>
+</body>
+</html>
