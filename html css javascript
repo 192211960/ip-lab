@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> my first form</title>
+<style>
+body 
+{
+text-align:center;
+     background-color: skyblue;
+     color:black;
+     
+}
+</style>
+</head>
+<body>
+<center> <h1>ONLINE INSURANCE MANAGEMENT</h1></center>
+<form  action="agent.php" method="post" onsubmit=" validate()">
+<label>NAME :</label>
+<input type="text" name="name" id="name">
+<br>
+<br>
+<label>ID :</label>
+<input type="text" name="id" id="id">
+<br>
+<br>
+<label>RE-TYPE ID :</label>
+<input type="text" name="reid" id="reid">
+<br>
+<br>
+<label>BANK :</label>
+<input type="text" name="bank" id="bank">
+<br>
+<br>
+<label> PLACE :</label>
+<select name="place" id="place">
+<option value="null" selected>select</option>
+<option value="chennai">CHENNAI</option>
+<option value="ap">ANDHRA</option>
+<option value="hyd">HYDERABAD</option>
+</select>
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>
+<script>
+function validate()
+{
+var a=document.getElementById("id").value;
+var b=document.getElementById("reid").value;
+if(a!=b){
+alert("invalid user");
+event.preventDefault();
+return false;
+}
+}
+</script>
+</body>
+</html>
